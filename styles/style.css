@@ -4,9 +4,9 @@ font-family: Raleway,sans-serif;
 background-color:#fff;
 
 }
+
 .content_section {
 box-sizing: border-box;
-min-height:180px;
 margin: auto;
 }
 
@@ -26,7 +26,6 @@ list-style:circle inside;
 align-items: flex-start;
 }
 
-
 .header__link {
 font-weight: 400;
 font-size: 18px;
@@ -35,7 +34,7 @@ text-underline-offset: 4px;
 color: #000;
 }
 
-.header__links-list .header__link_active .header__link {
+.header__link_active {
 text-decoration: none;
 }
 
@@ -81,9 +80,8 @@ background-image: url('../images/cover.jpg');
 background-size: cover;
 background-position: center;
 min-height: 757px;
-
-
 }
+
 .cover__title {
 display: flex;
 flex-direction: column;
@@ -140,7 +138,6 @@ text-transform: uppercase;
 }
 
 .bet-button {
-border: 1px solid #fff;
 width: 256px;
 height: 51px;
 background-color: transparent;
@@ -149,8 +146,10 @@ font-size: 22px;
 text-transform: uppercase;
 text-align: center;
 color: #fff;
+border: 1px solid currentColor ;
 }
 
+ /*лоты*/
 .lots {
 margin: 180px 24px 120px 24px;
 }
@@ -187,24 +186,30 @@ height: 100%;
 padding: 48px 40px 48px 40px;
 background-size:cover;
 background-position: center;
+position: relative;
 }
 
 .card-link {
 height: 100%;
+z-index: 0;
+}
+
+.card-title{
 font-weight: 700;
 font-size: 22px;
 line-height: 120%;
 text-transform: uppercase;
 text-decoration: solid underline white 1px;
-text-underline-offset: 2px;
-text-decoration-skip-ink: none;
+text-underline-offset: 3px;
 color: #fff;
 z-index: 0;
+height: 100%;
 }
 
 .card_type_film {
 background-image: url('../images/card-lot-01.jpg');
 }
+
 .card_type_book {
 background-image: url('../images/card-lot-02.jpg');
 } 
@@ -232,6 +237,7 @@ padding-top: 30px;
 padding-left: 40px;
 }
 
+/*об аукционе*/
 .about {
 margin: 0 24px 180px;
 box-sizing: border-box;
@@ -304,6 +310,7 @@ text-align: center;
 .footer__menu-list {
  list-style:none;
 }
+
 .footer__menu-list-item {
 font-weight: 400;
 font-size: 18px;
